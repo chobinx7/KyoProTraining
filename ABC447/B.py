@@ -1,9 +1,9 @@
-S = input()
+# S = input()
 # for i in range(len(S)):
 # print(S[i])
-char = max(S)
-S.pop(char)
-print(S)
+# char = max(S)
+# S.pop(char)
+# print(S)
 # ここまでで分からなくなった
 
 # Claudeに作成してもらったコード
