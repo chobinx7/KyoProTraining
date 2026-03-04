@@ -3,12 +3,11 @@ out = []
 for i in s:
     out.append(i)
     # print(out)
-for j in range(len(out)):
+cnt = out.count("B")
+for j in range(0, len(out) + cnt):
     if out[j] == "B":
-        print(out[j])
-        out.remove(out[j])
-        out.remove(out[j - 1])
-        break
+        del out[j - 1]  # Bの前を削除
+        del out[j]  # Bを削除
 result = ""
 for k in out:
     result += k
